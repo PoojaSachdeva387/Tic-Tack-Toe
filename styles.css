@@ -1,0 +1,121 @@
+body {
+  background-color: #f8f1f1;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  background-color: #ffe5ec;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.title {
+  color: #6a0572;
+}
+.todo-form {
+  display: flex;
+  flex-direction: column;
+}
+.input, .priority-select {
+  margin: 5px 0;
+  padding: 8px;
+  border: 1px solid #f6b7c5;
+  border-radius: 5px;
+}
+.add-button {
+  background-color: #ff85a1;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: #ff6381;
+}
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.todo-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.priority-label.high {
+  background-color: #ff595e;
+  color: white;
+}
+.priority-label.medium {
+  background-color: #ffcc5c;
+  color: white;
+}
+.priority-label.low {
+  background-color: #88d8b0;
+  color: white;
+}
+.todo-item {
+  background-color: #f3c4fb;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.todo-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+.todo-text {
+  font-weight: bold;
+}
+.todo-tag {
+  background-color: #cce7ff;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: #000;
+}
+.priority-label {
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.todo-actions {
+  display: flex;
+  gap: 5px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.delete-button {
+  background-color: #ff595e;
+  color: white;
+}
+.edit-button {
+  background-color: #6a0572;
+  color: white;
+}
