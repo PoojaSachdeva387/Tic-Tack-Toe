@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #2b2b2b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#status {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.side-message {
+  min-width: 150px;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  font-size: 58px;
+  font-weight: bold;
+  color: #00ffff;
+  text-align: center;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+
+#status {
+  flex: 1.5;
+  color: #ccc;
+  text-align: center;
+}
+
+.win-line {
+  position: absolute;
+  height: 4px;
+  background: #00ffff;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.win-message {
+  color: #00ffff;
+  font-size: 24px;
+  min-width: 150px;
+  text-align: right;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.win-message {
+  color: #00ffff;
+  font-size: 48px;
+  font-weight: bold;
+  min-width: 150px;
+  text-align: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Adjust board to allow overlayed line */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  position: relative;
+  width: 310px;
+  height: 310px;
+  margin: auto;
+}
+
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #111;
+  border-radius: 10px;
+  font-size: 60px;
+  color: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #00ffff55;
+}
+
+.cell.x {
+  color: #ff0066;
+  text-shadow: 0 0 10px #ff0066;
+}
+
+.cell.o {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #ff0066;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3388;
+}
